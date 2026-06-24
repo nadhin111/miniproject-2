@@ -1,0 +1,71 @@
+/* ============================================
+   CATEGORY BAR STYLES
+   ============================================ */
+
+.category-bar {
+  background: var(--bg-white);
+  padding: 20px 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.category-bar h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  padding-left: 4px;
+}
+
+.category-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  list-style: none;
+}
+
+.category-list::-webkit-scrollbar {
+  height: 3px;
+}
+
+.category-item {
+  flex-shrink: 0;
+}
+
+.category-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 24px;
+  border: 2px solid var(--border-color);
+  background: white;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.category-chip:hover {
+  border-color: var(--amazon-orange);
+  color: var(--amazon-orange);
+  box-shadow: 0 2px 8px rgba(255,153,0,0.2);
+  transform: translateY(-1px);
+}
+
+.category-chip.active {
+  background: var(--amazon-navy);
+  border-color: var(--amazon-navy);
+  color: white;
+  box-shadow: 0 4px 12px rgba(19,25,33,0.3);
+}
+
+.category-chip .cat-icon {
+  font-size: 18px;
+}
+
+.category-chip .cat-name {
+  font-size: 13px;
+}

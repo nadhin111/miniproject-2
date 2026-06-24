@@ -1,0 +1,12 @@
+/* App.css - cleared, all styles are in index.css and component CSS files */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app > main,
+.app > section:not(.navbar):not(.hero):not(.category-bar) {
+  flex: 1;
+}
